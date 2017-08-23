@@ -71,19 +71,19 @@ public class Main extends Application {
                     clip.start();
                     while (clip.getMicrosecondLength() != clip.getMicrosecondPosition()) {
                     }
-                    Clip clip1 = AudioSystem.getClip();
+                   clip  = AudioSystem.getClip();
                     is = getClass().getResourceAsStream(PATH + "ir_inter" + FILETYPE);
                     as = AudioSystem.getAudioInputStream(is);
-                    clip1.open(as);
-                    clip1.start();
-                    while (clip1.getMicrosecondLength() != clip1.getMicrosecondPosition()) {
+                    clip.open(as);
+                    clip.start();
+                    while (clip.getMicrosecondLength() != clip.getMicrosecondPosition()) {
                     }
-                    Clip clip2 = AudioSystem.getClip();
+                    clip = AudioSystem.getClip();
                     is = getClass().getResourceAsStream(PATH + "ir_end" + FILETYPE);
                     as = AudioSystem.getAudioInputStream(is);
-                    clip2.open(as);
-                    clip2.start();
-                    while (clip2.getMicrosecondLength() != clip2.getMicrosecondPosition()) {
+                    clip.open(as);
+                    clip.start();
+                    while (clip.getMicrosecondLength() != clip.getMicrosecondPosition()) {
                     }
                     break;
                 case "Congrats!":
